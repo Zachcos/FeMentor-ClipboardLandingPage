@@ -245,11 +245,8 @@ section .body--secondary {
   align-items: center;
 }
 #snippets .body-wrapper .feature-image {
-  left: -50px;
+  left: -100px;
   position: relative;
-}
-#snippets .body-wrapper .col-wrapper {
-  margin-left: 5%;
 }
 
 #supercharge .row-wrapper {
@@ -271,6 +268,57 @@ section .body--secondary {
 #supercharge .row-wrapper .tool p {
   text-align: center;
   width: 90%;
+}
+
+#brands .brands-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 85%;
+}
+
+#footer {
+  background: #f6f7f9;
+  height: 150px;
+  margin-bottom: 0;
+}
+#footer .footer-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  width: 80%;
+}
+#footer .footer-wrapper .logo {
+  width: 15%;
+}
+#footer .footer-wrapper .logo img {
+  width: 50px;
+}
+#footer .footer-wrapper .footer-links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 50%;
+  width: 50%;
+}
+#footer .footer-wrapper .footer-links .link {
+  color: #4c545d;
+  cursor: pointer;
+  display: inline-block;
+  height: 50%;
+  opacity: 0.8;
+  transform: translateY(25%);
+  width: 33%;
+}
+#footer .footer-wrapper .social-icons {
+  display: flex;
+  justify-content: flex-end;
+  width: 35%;
+}
+#footer .footer-wrapper .social-icons i {
+  color: #4c545d;
+  margin-left: 25px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -5,6 +5,7 @@ $strongCyan: hsl(171, 66%, 44%);
 $lightBlue: hsl(233, 100%, 69%);
 $darkGrayishBlue: hsl(210, 10%, 33%);
 $grayishBlue: hsl(201, 11%, 66%);
+$lightGray: hsl(220, 18%, 97%);
 /* End  variables */
 
 html {
@@ -132,12 +133,8 @@ section {
     align-items: center;
 
     .feature-image {
-      left: -50px;
+      left: -100px;
       position: relative;
-    }
-
-    .col-wrapper {
-      margin-left: 5%;
     }
   }
 }
@@ -163,6 +160,64 @@ section {
       p {
         text-align: center;
         width: 90%;
+      }
+    }
+  }
+}
+
+#brands {
+  .brands-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 85%;
+  }
+}
+
+#footer {
+  background: $lightGray;
+  height: 150px;
+  margin-bottom: 0;
+
+  .footer-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: 80%;
+
+    .logo {
+      width: 15%;
+      img {
+        width: 50px;
+      }
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 50%;
+      width: 50%;
+      .link {
+        color: $darkGrayishBlue;
+        cursor: pointer;
+        display: inline-block;
+        height: 50%;
+        opacity: 0.8;
+        transform: translateY(25%);
+        width: 33%;
+      }
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: flex-end;
+      width: 35%;
+
+      i {
+        color: $darkGrayishBlue;
+        margin-left: 25px;
       }
     }
   }
