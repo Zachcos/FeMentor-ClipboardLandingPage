@@ -2,7 +2,9 @@
 
 /* Start variables */
 $strongCyan: hsl(171, 66%, 44%);
+$strongCyanHover: hsl(171, 52%, 58%);
 $lightBlue: hsl(233, 100%, 69%);
+$lightBlueHover: hsl(233, 100%, 77%);
 $darkGrayishBlue: hsl(210, 10%, 33%);
 $grayishBlue: hsl(201, 11%, 66%);
 $lightGray: hsl(220, 18%, 97%);
@@ -75,18 +77,29 @@ section {
     font-weight: 600;
     height: 54px;
     letter-spacing: 1px;
+    transition: all 0.2s ease;
     width: 220px;
 
     &--green {
       background: $strongCyan;
-      box-shadow: inset 0px -3px 0px 0px hsla(171, 66%, 39%, 100%),
+      box-shadow: inset 0px -3px 0px 0px hsl(171, 66%, 39%),
         0px 5px 7px 5px hsla(171, 66%, 39%, 30%);
+      &:hover {
+        background: $strongCyanHover;
+        box-shadow: inset 0px -3px 0px 0px hsl(171, 52%, 54%),
+          0px 5px 7px 5px hsla(171, 66%, 39%, 30%);
+      }
     }
 
     &--blue {
       background: $lightBlue;
-      box-shadow: inset 0px -3px 0px 0px hsla(233, 100%, 64%, 100%),
+      box-shadow: inset 0px -3px 0px 0px hsl(233, 100%, 64%),
         0px 5px 7px 5px hsla(233, 100%, 64%, 30%);
+      &:hover {
+        background: $lightBlueHover;
+        box-shadow: inset 0px -3px 0px 0px hsl(233, 100%, 74%),
+          0px 5px 7px 5px hsla(233, 100%, 64%, 30%);
+      }
     }
   }
 }
@@ -206,7 +219,12 @@ section {
         height: 50%;
         opacity: 0.8;
         transform: translateY(25%);
+        transition: color 0.2s ease;
         width: 33%;
+
+        &:hover {
+          color: $strongCyan;
+        }
       }
     }
 
