@@ -42,6 +42,35 @@ section {
   }
 }
 
+.button-wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  .btn {
+    border-radius: 2rem;
+    border: none;
+    color: rgba(255, 255, 255, 0.85);
+    cursor: pointer;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    height: 54px;
+    letter-spacing: 1px;
+    width: 220px;
+
+    &--green {
+      background: $strongCyan;
+      box-shadow: inset 0px -3px 0px 0px hsla(171, 66%, 39%, 100%),
+        0px 5px 7px 5px hsla(171, 66%, 39%, 30%);
+    }
+    &--blue {
+      background: $lightBlue;
+      box-shadow: inset 0px -3px 0px 0px hsla(233, 100%, 64%, 100%),
+        0px 5px 7px 5px hsla(233, 100%, 64%, 30%);
+    }
+  }
+}
+
 #hero {
   background: url("../images/bg-header-desktop.png") no-repeat;
   padding: 125px 0 150px;
@@ -62,33 +91,5 @@ section {
     margin-bottom: 50px;
     text-align: center;
     width: 50%;
-  }
-  .button-wrapper {
-    display: flex;
-    justify-content: space-around;
-    width: 500px;
-    .btn {
-      border-radius: 2rem;
-      border: none;
-      color: rgba(255, 255, 255, 0.85);
-      cursor: pointer;
-      font-family: "Bai Jamjuree", sans-serif;
-      font-size: 0.9rem;
-      font-weight: 600;
-      height: 54px;
-      letter-spacing: 1px;
-      width: 220px;
-
-      &--green {
-        background: $strongCyan;
-        box-shadow: inset 0px -3px 0px 0px hsla(171, 66%, 39%, 100%),
-          0px 5px 7px 5px hsla(171, 66%, 39%, 30%);
-      }
-      &--blue {
-        background: $lightBlue;
-        box-shadow: inset 0px -3px 0px 0px hsla(233, 100%, 64%, 100%),
-          0px 5px 7px 5px hsla(233, 100%, 64%, 30%);
-      }
-    }
   }
 }
