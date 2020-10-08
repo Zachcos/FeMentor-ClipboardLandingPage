@@ -12,3 +12,11 @@ html {
   font-size: 18px;
   font-weight: 400;
 }
+
+section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
