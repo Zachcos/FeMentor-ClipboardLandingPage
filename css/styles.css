@@ -159,6 +159,11 @@ section .heading {
 }
 section .heading--primary {
   font-size: 1.9rem;
+  margin-bottom: 25px;
+}
+section .heading--secondary {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
 }
 section .body {
   color: #9fabb2;
@@ -166,7 +171,14 @@ section .body {
 section .body--primary {
   line-height: 1.5rem;
   text-align: center;
+  margin-bottom: 75px;
   width: 50%;
+}
+section .body--secondary {
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+  margin-bottom: 50px;
+  width: 60%;
 }
 
 .button-wrapper {
@@ -216,6 +228,27 @@ section .body--primary {
   margin-bottom: 50px;
   text-align: center;
   width: 50%;
+}
+
+#snippets .heading-wrapper {
+  align-items: center;
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+#snippets .body-wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+#snippets .body-wrapper .feature-image {
+  left: -50px;
+  position: relative;
+}
+#snippets .body-wrapper .col-wrapper {
+  margin-left: 5%;
 }
 
 /*# sourceMappingURL=styles.css.map */
