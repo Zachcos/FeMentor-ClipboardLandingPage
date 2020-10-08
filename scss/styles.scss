@@ -24,10 +24,6 @@ section {
   margin-bottom: 125px;
   width: 100%;
 
-  &.row {
-    flex-direction: row;
-  }
-
   .heading {
     color: $darkGrayishBlue;
     font-weight: 600;
@@ -238,5 +234,148 @@ section {
         margin-left: 25px;
       }
     }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  section {
+    .heading {
+      &--primary {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        text-align: center;
+        width: 80%;
+      }
+    }
+
+    .body {
+      &--primary {
+        font-size: 0.9rem;
+        text-align: center;
+        width: 80%;
+      }
+    }
+  }
+
+  .button-wrapper {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    .btn {
+      width: 80%;
+      margin-bottom: 25px;
+    }
+  }
+
+  #hero {
+    h1 {
+      font-size: 1.75rem;
+      line-height: 2.3rem;
+      width: 90%;
+    }
+
+    p {
+      font-size: 0.9rem;
+      width: 83%;
+    }
+  }
+
+  #snippets {
+    .body-wrapper {
+      flex-direction: column;
+
+      .feature-image {
+        left: 0;
+        width: 80%;
+        margin-bottom: 50px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .col-wrapper {
+        text-align: center;
+
+        p {
+          margin: 0 auto 50px;
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  #clipboard {
+    .feature-image {
+      width: 80%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  #supercharge {
+    .row-wrapper {
+      flex-direction: column;
+      width: 100%;
+
+      .tool {
+        margin: 0 auto;
+        width: 90%;
+      }
+    }
+  }
+
+  #brands {
+    .brands-wrapper {
+      align-items: center;
+      flex-direction: column;
+
+      .brand {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  #footer {
+    height: auto;
+    padding-bottom: 100px;
+    .footer-wrapper {
+      flex-direction: column;
+      height: auto;
+
+      .logo {
+        width: auto;
+        margin: 50px auto;
+      }
+
+      .footer-links {
+        flex-wrap: nowrap;
+        margin-bottom: 50px;
+        text-align: center;
+        width: 100%;
+        .link {
+          display: block;
+          width: 100%;
+          margin-bottom: 50px;
+        }
+      }
+
+      .social-icons {
+        justify-content: space-between;
+        width: 50%;
+
+        i {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #hero {
+    background: url("../images/bg-header-mobile.png") no-repeat;
   }
 }
